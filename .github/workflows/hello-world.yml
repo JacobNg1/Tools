@@ -1,0 +1,9 @@
+name: Greeting Workflow
+on: [push]  # 代码推送时触发
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "🕒 2025-02-25 10:35 | Hello World from GitHub Actions!"
